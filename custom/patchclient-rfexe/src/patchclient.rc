@@ -1,0 +1,149 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "SubWCRev.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PATCHCLIENT         ICON                    "patchclient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PC_MAINWINDOW DIALOG  50, 50, 303, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "PatchClient"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "",IDC_STATUSTEXT,7,218,289,9
+    PUSHBUTTON      "",IDC_START,152,274,65,15,WS_DISABLED
+    EDITTEXT        IDC_NOTICE,7,22,289,190,ES_MULTILINE | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_EXIT,231,274,65,15
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER | WS_GROUP,7,233,289,11
+    LTEXT           "",IDC_HEADER,7,7,159,9
+    LTEXT           "",IDC_STATUSFOOT,7,248,289,10
+    LTEXT           "",IDC_DL_SPEED,7,265,125,10
+    LTEXT           "",IDC_DL_TIMELEFT,7,279,104,10
+    RTEXT           "",IDC_YRABOUT,177,7,119,9,SS_NOTIFY
+    CTEXT           "",IDC_VOTELINK,157,260,139,11,SS_NOTIFY | NOT WS_GROUP
+END
+
+IDD_ABOUTBOX DIALOG  0, 0, 265, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "PatchClient",IDC_STATIC,7,7,105,10
+    LTEXT           "Copyright 2007",IDC_STATIC,18,20,141,10
+    DEFPUSHBUTTON   "Close",IDC_ABB_OK,201,7,57,13,NOT WS_TABSTOP
+    LTEXT           "",IDC_ABB_BUILDON,7,71,139,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PC_MAINWINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "FileDescription", "Patch Client r" SVN_REV " " SVN_DATE
+            VALUE "FileVersion", "r" SVN_REV " " SVN_DATE
+            VALUE "InternalName", "patchclient-rfexe"
+            VALUE "OriginalFilename", "patchclient-rfexe.exe"
+            VALUE "ProductName", "PatchClient"
+            VALUE "ProductVersion", "r" SVN_REV " " SVN_DATE
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

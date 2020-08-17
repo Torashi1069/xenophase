@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{004b2aba-8bf6-4058-b609-0415edf38a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\NSystem">
+      <UniqueIdentifier>{ca2520fd-a5a6-4e52-ae97-d66d7c56bf35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network3">
+      <UniqueIdentifier>{58f62285-3b99-4d86-ab00-f11c4a8a2789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Billing">
+      <UniqueIdentifier>{90a8ff21-ffcd-4a07-8671-d445b32ac60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WUCS">
+      <UniqueIdentifier>{3fa025ae-43b1-4431-81f4-d437a8dcdcac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Common\NSystem\NInter.h">
+      <Filter>Common\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NSystem\NMessageQueue.h">
+      <Filter>Common\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NSystem\NObject.h">
+      <Filter>Common\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NSystem\NThread.h">
+      <Filter>Common\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CAccountServerMgr.h" />
+    <ClInclude Include="src\Account.h" />
+    <ClInclude Include="src\Common\NSystem\NMessageMgr.h">
+      <Filter>Common\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NSyncObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NOutputTextMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\EnterTraceLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NFileLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\Network.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\GlobalInfoDB.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\Database.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCBangBillingDB.h" />
+    <ClInclude Include="src\Common\DatabaseStatement.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\AsyncProcess.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\AsyncProcessMgr.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\CompletionPort.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\Process.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\ProcessFactory.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\Stream.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network3\StreamManager.h">
+      <Filter>Network3</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\CriticalSection.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\CircleQueue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\Thread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharSvrProcess.h" />
+    <ClInclude Include="src\UserProcess.h" />
+    <ClInclude Include="src\Common\InfoScript.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\RandStr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\MemPool.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enums.h" />
+    <ClInclude Include="src\Common\ServerInfoList.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserList.h" />
+    <ClInclude Include="src\UserVerify.h" />
+    <ClInclude Include="src\CharacterServerInfo.h" />
+    <ClInclude Include="src\ConnectLog.h" />
+    <ClInclude Include="src\BlockTime.h" />
+    <ClInclude Include="src\AccountDB.h" />
+    <ClInclude Include="src\MonitorPacket.h" />
+    <ClInclude Include="src\DES.h" />
+    <ClInclude Include="src\Common\ScriptParser.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TBlockTime.h" />
+    <ClInclude Include="src\Common\md5.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\Singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BillingConnection.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client_.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReceiveQueue.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SendQueue.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\DBProxy.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\NODBCHandler.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\SyncObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BillingDB.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Certificate.h">
+      <Filter>Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WUCSSvrProcess.h">
+      <Filter>WUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WucsDB.h">
+      <Filter>WUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WUCSPacket.h">
+      <Filter>WUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WUCSStreamManager.h">
+      <Filter>WUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserDB.h" />
+    <ClInclude Include="src\UserDB_Sakray.h" />
+    <ClInclude Include="src\SakrayAID.h" />
+    <ClInclude Include="src\ConnectLogDB.h" />
+    <ClInclude Include="src\DuplicatedIPBlockList.h" />
+    <ClInclude Include="src\PCBangList.h" />
+    <ClInclude Include="src\PCBangDB.h" />
+    <ClInclude Include="src\BlockIPListMng.h" />
+    <ClInclude Include="src\NightEnv.h" />
+    <ClInclude Include="src\UserCounter.h" />
+    <ClInclude Include="src\MonitorProcess.h" />
+    <ClInclude Include="src\OTPMgr.h" />
+    <ClInclude Include="src\Common\Packet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\MyMiniDumpUnhandledExceptionHandler.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAccountServerMgr.cpp" />
+    <ClCompile Include="src\Account.cpp" />
+    <ClCompile Include="src\Common\NSystem\NMessageMgr.cpp">
+      <Filter>Common\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NSystem\NMessageQueue.cpp">
+      <Filter>Common\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NSystem\NObject.cpp">
+      <Filter>Common\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NSystem\NThread.cpp">
+      <Filter>Common\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NSyncObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NOutputTextMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\EnterTraceLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NFileLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\Network.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\GlobalInfoDB.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\Database.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCBangBillingDB.cpp" />
+    <ClCompile Include="src\Common\DatabaseStatement.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network3\AsyncProcessMgr.cpp">
+      <Filter>Network3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network3\CompletionPort.cpp">
+      <Filter>Network3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network3\Process.cpp">
+      <Filter>Network3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network3\Stream.cpp">
+      <Filter>Network3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network3\StreamManager.cpp">
+      <Filter>Network3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\CircleQueue.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\CriticalSection.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharSvrProcess.cpp" />
+    <ClCompile Include="src\UserProcess.cpp" />
+    <ClCompile Include="src\Common\InfoScript.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\ServerInfoList.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserList.cpp" />
+    <ClCompile Include="src\UserVerify.cpp" />
+    <ClCompile Include="src\CharacterServerInfo.cpp" />
+    <ClCompile Include="src\ConnectLog.cpp" />
+    <ClCompile Include="src\BlockTime.cpp" />
+    <ClCompile Include="src\AccountDB.cpp" />
+    <ClCompile Include="src\MonitorPacket.cpp" />
+    <ClCompile Include="src\DES.cpp" />
+    <ClCompile Include="src\Common\ScriptParser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\md5.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StdAfx.h" />
+    <ClCompile Include="src\BillingConnection.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client_.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReceiveQueue.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SendQueue.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\NODBCHandler.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\SyncObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BillingDB.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Certificate.cpp">
+      <Filter>Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WucsDB.cpp">
+      <Filter>WUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WUCSPacket.cpp">
+      <Filter>WUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WUCSStreamManager.cpp">
+      <Filter>WUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WUCSSvrProcess.cpp">
+      <Filter>WUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserDB.cpp" />
+    <ClCompile Include="src\UserDB_Sakray.cpp" />
+    <ClCompile Include="src\ConnectLogDB.cpp" />
+    <ClCompile Include="src\DuplicatedIPBlockList.cpp" />
+    <ClCompile Include="src\PCBangList.cpp" />
+    <ClCompile Include="src\PCBangDB.cpp" />
+    <ClCompile Include="src\BlockIPListMng.cpp" />
+    <ClCompile Include="src\NightEnv.cpp" />
+    <ClCompile Include="src\UserCounter.cpp" />
+    <ClCompile Include="src\OTPMgr.cpp" />
+    <ClCompile Include="src\Common\Packet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\MyMiniDumpUnhandledExceptionHandler.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

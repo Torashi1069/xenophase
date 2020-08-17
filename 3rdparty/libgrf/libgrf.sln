@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgrf", "libgrf.vcproj", "{3B75912A-6B33-4335-A38D-4BBEAC7780DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C} = {C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D} = {8FD826F8-3739-44E6-8CC8-997122E53B8D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgrf_test", "libgrf_test.vcproj", "{F7D31458-3FFE-451C-AA7E-356FBC35F955}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3B75912A-6B33-4335-A38D-4BBEAC7780DA} = {3B75912A-6B33-4335-A38D-4BBEAC7780DA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdparty", "3rdparty", "{8C45AA91-3D1A-4C46-9AF4-FC1C836A6D65}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libz", "..\zlib\zlib.vcproj", "{8FD826F8-3739-44E6-8CC8-997122E53B8D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platform", "..\platform\platform.vcproj", "{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B75912A-6B33-4335-A38D-4BBEAC7780DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B75912A-6B33-4335-A38D-4BBEAC7780DA}.Debug|Win32.Build.0 = Debug|Win32
+		{3B75912A-6B33-4335-A38D-4BBEAC7780DA}.Release|Win32.ActiveCfg = Release|Win32
+		{3B75912A-6B33-4335-A38D-4BBEAC7780DA}.Release|Win32.Build.0 = Release|Win32
+		{F7D31458-3FFE-451C-AA7E-356FBC35F955}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7D31458-3FFE-451C-AA7E-356FBC35F955}.Debug|Win32.Build.0 = Debug|Win32
+		{F7D31458-3FFE-451C-AA7E-356FBC35F955}.Release|Win32.ActiveCfg = Release|Win32
+		{F7D31458-3FFE-451C-AA7E-356FBC35F955}.Release|Win32.Build.0 = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|Win32.Build.0 = Debug|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|Win32.ActiveCfg = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|Win32.Build.0 = Release|Win32
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}.Debug|Win32.Build.0 = Debug|Win32
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}.Release|Win32.ActiveCfg = Release|Win32
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D} = {8C45AA91-3D1A-4C46-9AF4-FC1C836A6D65}
+		{C6A5B15C-293C-40CC-9FAE-C3A7A657E12C} = {8C45AA91-3D1A-4C46-9AF4-FC1C836A6D65}
+	EndGlobalSection
+EndGlobal

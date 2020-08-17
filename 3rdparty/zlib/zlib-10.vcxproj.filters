@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{ed156015-e926-409a-bc3b-6a57e460ff65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\x86">
+      <UniqueIdentifier>{02693a02-c4ac-4c6d-a5f4-5be22cfca067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\x64">
+      <UniqueIdentifier>{05514291-630e-4441-ae0e-f922eee71728}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM64 Include="contrib\masmx64\gvmat64.asm">
+      <Filter>contrib\x64</Filter>
+    </MASM64>
+    <MASM64 Include="contrib\masmx64\inffasx64.asm">
+      <Filter>contrib\x64</Filter>
+    </MASM64>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\masmx64\inffas8664.c">
+      <Filter>contrib\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="adler32.c" />
+    <ClCompile Include="compress.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="deflate.c" />
+    <ClCompile Include="gzclose.c" />
+    <ClCompile Include="gzlib.c" />
+    <ClCompile Include="gzread.c" />
+    <ClCompile Include="gzwrite.c" />
+    <ClCompile Include="infback.c" />
+    <ClCompile Include="inffast.c" />
+    <ClCompile Include="inflate.c" />
+    <ClCompile Include="inftrees.c" />
+    <ClCompile Include="trees.c" />
+    <ClCompile Include="uncompr.c" />
+    <ClCompile Include="zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="deflate.h" />
+    <ClInclude Include="gzguts.h" />
+    <ClInclude Include="inffast.h" />
+    <ClInclude Include="inffixed.h" />
+    <ClInclude Include="inflate.h" />
+    <ClInclude Include="inftrees.h" />
+    <ClInclude Include="trees.h" />
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="zlib.h" />
+    <ClInclude Include="zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM32 Include="contrib\masmx86\inffas32.asm">
+      <Filter>contrib\x86</Filter>
+    </MASM32>
+    <MASM32 Include="contrib\masmx86\match686.asm">
+      <Filter>contrib\x86</Filter>
+    </MASM32>
+  </ItemGroup>
+</Project>

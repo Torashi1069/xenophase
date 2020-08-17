@@ -1,0 +1,98 @@
+Guidelines
+
+IMPORTANT:
+- do not change the code, keep all the bugs and instead just mark them (change code only in the custom branch)
+
+Classes:
+- virtual calls : this->Func()
+- function calls : this->Class::Func()
+- member variable use:
+  - with m_ prefix : m_variable
+  - without m_ prefix : this->variable
+- no style restrictions for std containers
+- specify visibility of each member variable individually
+- document base offset of each member variable (decadic, right-aligned number, ex. /* this+1234 */)
+- friend declarations at the bottom of the class
+- implement functions that were fully inlined and optimized out in the source file, not the header
+
+Code:
+- give reasonable names to variables (don't leave hexrays placeholder vXX names around; try to use official names if available)
+- obtain line information from debug symbols and add to function implementations: (ex: "CParty::CParty(void) // line 11")
+  - use "// line <number>" if the function code is available
+  - use "// line ???" if the function code is NOT available
+  - do not add if it hasn't been checked yet
+- empty functions have a single ; where the code would be
+- use scope variables instead of putting them at the top of the function
+- initialize variables on the same line they are defined on
+- all source files use the encoding "utf-8 (without signature)"; use transcoding hooks if application expects a specific charset
+- make boolean expressions easier to spot, by parenthesizing them and adding one whitespace on each side (e.g. "return ( i == 5 );" or "bool isOK = ( ReadFile() != FALSE );"
+- mark non-std inlined calls with "//inlined"
+- memcpy length in order of preference:
+  - use sizeof(<target>) if target has the intended size and is not a pointer
+  - use sizeof(<source>) if source has the intended size and is not a pointer
+  - use sizeof(<type>) if a type exists
+  - use a number as a last resort
+- overloaded functions:
+  - append a number to the name of hook of the variants (ex: "CParty::SearchGID" has hooks "CParty::_SearchGID" and "CParty::_SearchGID2")
+  - use the mangled name when initializing the hooks (ex: "CParty::_SearchGID" uses "?SearchGID@CParty@@QAEKPAD@Z" and "CParty::_SearchGID2" uses "?SearchGID@CParty@@QAEKK@Z")
+
+Style:
+- empty line between logical blocks of statements (after scope ending braces, ...)
+- empty line between lines with decreasing indentation (see example)
+- negative returns go first, positive return goes at the end (unless a more suitable layout exists)
+- avoid unnecessary nesting, avoid staircase pattern "if() { if() { if() {" (see previous point)
+- no maximum line width limit; if you want to break up a statement into multiple lines, have a reason (e.g. chain of if statements, chain of ternary operators, ...)
+- multiple statements on a single line is allowed if it obviously helps readability (chains of repetitive pairs of statements with identical/aligned width, ...)
+
+Style examples:
+  - demonstrates function layout, for loop, omitted scope braces, empty line between blocks
+  |	CObject* CObjectDB::Find(int x, int y)
+  |	{
+  |		for( mystd::list<CObject*>::const_iterator it = m_list.begin(); it != m_list.end(); ++it )
+  |			if( (*it)->x == x && (*it)->y == y )
+  |				return *it;
+  |		
+  |		return NULL;
+  |	}
+  - alternative function layout
+  |	CObject* CObjectDB::Find(int x, int y)
+  |	{
+  |		mystd::list<CObject*>::const_iterator it;
+  |		
+  |		for( it = m_list.begin(); it != m_list.end(); ++it )
+  |			if( (*it)->x == x && (*it)->y == y )
+  |				break;
+  |		
+  |		return ( it != m_list.end() ) ? *it : NULL;
+  |	}
+  - demonstrates if-else chaning, scope braces, boolean expressions
+  |	if( val1 == 0 )
+  |	{
+  |	}
+  |	else
+  |	if( val1 == 5 )
+  |	{
+  |	}
+  |	else
+  |	{
+  |	}
+  - demonstrates switch statement, case/break indentation, mixing scope braces, default goes last
+  |	switch( msg )
+  |	{
+  |	case MSG_QUIT:
+  |		g_bDone = true;
+  |		Cleanup();
+  |	break;
+  |	case MSG_DRAW:
+  |	{
+  |		RECT& rect = *(RECT*)val1;
+  |		this->Draw(rect);
+  |	}
+  |	break;
+  |	default:
+  |	break;
+  |	}
+  - demonstrates ternary operator chaining
+  |	int val = ( foo == 0  ) ? func() + 5
+  |	          ( bar == 10 ) ? FOO_SMTHNG
+  |	                        : 10;

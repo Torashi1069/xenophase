@@ -1,0 +1,62 @@
+#pragma once
+
+
+enum
+{
+	MCLIENT_TYPE = 0,
+	ZSERVER_TYPE = 1,
+};
+
+
+enum enumMAPTYPE
+{
+	MAPTYPE_VILLAGE               = 0,
+	MAPTYPE_VILLAGE_IN            = 1,
+	MAPTYPE_FIELD                 = 2,
+	MAPTYPE_DUNGEON               = 3,
+	MAPTYPE_ARENA                 = 4,
+	MAPTYPE_PENALTY_FREEPKZONE    = 5,
+	MAPTYPE_NOPENALTY_FREEPKZONE  = 6,
+	MAPTYPE_EVENT_GUILDWAR        = 7,
+	MAPTYPE_AGIT                  = 8,
+	MAPTYPE_DUNGEON2              = 9,
+	MAPTYPE_DUNGEON3              = 10,
+	MAPTYPE_PKSERVER              = 11,
+	MAPTYPE_PVPSERVER             = 12,
+	MAPTYPE_DENYSKILL             = 13,
+	MAPTYPE_TURBOTRACK            = 14,
+	MAPTYPE_JAIL                  = 15,
+	MAPTYPE_MONSTERTRACK          = 16,
+	MAPTYPE_PORINGBATTLE          = 17,
+	MAPTYPE_AGIT_SIEGEV15         = 18,
+	MAPTYPE_BATTLEFIELD           = 19,
+	MAPTYPE_PVP_TOURNAMENT        = 20,
+	MAPTYPE_SIEGE_LOWLEVEL        = 25,
+	MAPTYPE_2012_RWC_BATTLE_FIELD = 26,
+	MAPTYPE_UNUSED                = 29,
+	MAPTYPE_LAST                  = 30,
+};
+
+
+enum _SKILL_ID
+{
+	//...
+	SKID_GD_APPROVAL          = 10000,
+	SKID_GD_KAFRACONTRACT     = 10001,
+	SKID_GD_GUARDRESEARCH     = 10002,
+	SKID_GD_GUARDUP           = 10003,
+	SKID_GD_EXTENSION         = 10004,
+	SKID_GD_GLORYGUILD        = 10005,
+	SKID_GD_LEADERSHIP        = 10006,
+	SKID_GD_GLORYWOUNDS       = 10007,
+	SKID_GD_SOULCOLD          = 10008,
+	SKID_GD_HAWKEYES          = 10009,
+	SKID_GD_BATTLEORDER       = 10010,
+	SKID_GD_REGENERATION      = 10011,
+	SKID_GD_RESTORE           = 10012,
+	SKID_GD_EMERGENCYCALL     = 10013,
+	SKID_GD_DEVELOPMENT       = 10014,
+	SKID_GD_ITEMEMERGENCYCALL = 10015,
+	SKID_GD_LAST              = 10016,
+	//...
+};

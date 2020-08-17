@@ -1,0 +1,11 @@
+#pragma once
+_MYSTD_BEGIN
+
+static FILE* (__cdecl & fopen)(const char* file, const char* mode) = *(FILE* (__cdecl *)(const char*, const char*)) DetourFindFunction(SERVER, "_fopen");
+static int (__cdecl & fclose)(FILE* stream) = *(int (__cdecl *)(FILE*)) DetourFindFunction(SERVER, "_fclose");
+static int (__cdecl & fputs)(const char* string, FILE* stream) = *(int (__cdecl *)(const char*, FILE*)) DetourFindFunction(SERVER, "_fputs");
+static int (__cdecl & fflush)(FILE* stream) = *(int (__cdecl *)(FILE*)) DetourFindFunction(SERVER, "_fflush");
+static int (__cdecl & _filelength)(int filedes) = *(int (__cdecl *)(int)) DetourFindFunction(SERVER, "__filelength");
+//static int (__cdecl & fileno)(FILE* stream) = *(int (__cdecl *)(FILE*)) DetourFindFunction(SERVER, "_fileno");
+
+_MYSTD_END

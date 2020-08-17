@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>character-2013-03-12-thai</ProjectName>
+    <ProjectGuid>{51C35B2B-95A1-4D54-A985-FCF887A20D5E}</ProjectGuid>
+    <RootNamespace>character-2013-03-12-thai</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>out\vc10-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>out\vc10-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;../../3rdparty;../../3rdparty/lua/5.1.4</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ForcedIncludeFiles>StdAfx.h</ForcedIncludeFiles>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>user32.lib;winmm.lib;ws2_32.lib;odbc32.lib;gdi32.lib;imagehlp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;../../3rdparty;../../3rdparty/lua/5.1.4</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ForcedIncludeFiles>StdAfx.h</ForcedIncludeFiles>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalDependencies>user32.lib;winmm.lib;ws2_32.lib;odbc32.lib;gdi32.lib;imagehlp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AccountProcess.cpp" />
+    <ClCompile Include="src\AES.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\CharacterConfig.cpp" />
+    <ClCompile Include="src\CharacterDB.cpp" />
+    <ClCompile Include="src\CharacterLogDB.cpp" />
+    <ClCompile Include="src\CharCipher.cpp" />
+    <ClCompile Include="src\CHsvrSchedulerIdentity.cpp" />
+    <ClCompile Include="src\Common\CircleQueue.cpp" />
+    <ClCompile Include="src\Common\CriticalSection.cpp" />
+    <ClCompile Include="src\Common\Database.cpp" />
+    <ClCompile Include="src\Common\DatabaseStatement.cpp" />
+    <ClCompile Include="src\Common\EnterTraceLog.cpp" />
+    <ClCompile Include="src\Common\GlobalInfoDB.cpp" />
+    <ClCompile Include="src\Common\InfoScript.cpp" />
+    <ClCompile Include="src\Common\IPInfoDB.cpp" />
+    <ClCompile Include="src\Common\IPMap.cpp" />
+    <ClCompile Include="src\Common\MapInfoList.cpp" />
+    <ClCompile Include="src\Common\MyMiniDumpUnhandledExceptionHandler.cpp" />
+    <ClCompile Include="src\Common\Network.cpp" />
+    <ClCompile Include="src\Common\NFileLog.cpp" />
+    <ClCompile Include="src\Common\NLuaState.cpp" />
+    <ClCompile Include="src\Common\NODBCHandler.cpp" />
+    <ClCompile Include="src\Common\NOutputTextMgr.cpp" />
+    <ClCompile Include="src\Common\NSyncObject.cpp" />
+    <ClCompile Include="src\Common\NSystem\NIPAddr.cpp" />
+    <ClCompile Include="src\Common\Packet.cpp" />
+    <ClCompile Include="src\Common\PacketLengthExMgr.cpp" />
+    <ClCompile Include="src\Common\ScriptParser.cpp" />
+    <ClCompile Include="src\Common\ServerIdentity.cpp" />
+    <ClCompile Include="src\Common\ServerInfoList.cpp" />
+    <ClCompile Include="src\Common\SyncObject.cpp" />
+    <ClCompile Include="src\CUserStreamMgr.cpp" />
+    <ClCompile Include="src\CZsvrStreamMgr.cpp" />
+    <ClCompile Include="src\DES.cpp" />
+    <ClCompile Include="src\ForbiddenName.cpp" />
+    <ClCompile Include="src\ForceMap.cpp" />
+    <ClCompile Include="src\MsgInfo.cpp" />
+    <ClCompile Include="src\Network3\AsyncProcessMgr.cpp" />
+    <ClCompile Include="src\Network3\CompletionPort.cpp" />
+    <ClCompile Include="src\Network3\Process.cpp" />
+    <ClCompile Include="src\Network3\Stream.cpp" />
+    <ClCompile Include="src\Network3\StreamManager.cpp" />
+    <ClCompile Include="src\PremiumServiceDB.cpp" />
+    <ClCompile Include="src\PremiumServiceInfo.cpp" />
+    <ClCompile Include="src\PreventNameList.cpp" />
+    <ClCompile Include="src\StartMap.cpp" />
+    <ClCompile Include="src\UserAuthenticate.cpp" />
+    <ClCompile Include="src\UserList.cpp" />
+    <ClCompile Include="src\UserProcess.cpp" />
+    <ClCompile Include="src\UserVerify.cpp" />
+    <ClCompile Include="src\ZoneServerInfoList.cpp" />
+    <ClCompile Include="src\ZoneSvrProcess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AccountProcess.h" />
+    <ClInclude Include="src\AES.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\CharacterConfig.h" />
+    <ClInclude Include="src\CharacterDB.h" />
+    <ClInclude Include="src\CharacterLogDB.h" />
+    <ClInclude Include="src\CharCipher.h" />
+    <ClInclude Include="src\CHsvrSchedulerIdentity.h" />
+    <ClInclude Include="src\Common\CircleQueue.h" />
+    <ClInclude Include="src\Common\CriticalSection.h" />
+    <ClInclude Include="src\Common\Database.h" />
+    <ClInclude Include="src\Common\DatabaseStatement.h" />
+    <ClInclude Include="src\Common\DBProxy.h" />
+    <ClInclude Include="src\Common\EnterTraceLog.h" />
+    <ClInclude Include="src\Common\GlobalInfoDB.h" />
+    <ClInclude Include="src\Common\InfoScript.h" />
+    <ClInclude Include="src\Common\IPInfoDB.h" />
+    <ClInclude Include="src\Common\IPMap.h" />
+    <ClInclude Include="src\Common\MapInfoList.h" />
+    <ClInclude Include="src\Common\MemPool.h" />
+    <ClInclude Include="src\Common\MyMiniDumpUnhandledExceptionHandler.h" />
+    <ClInclude Include="src\Common\Network.h" />
+    <ClInclude Include="src\Common\NFileLog.h" />
+    <ClInclude Include="src\Common\NLuaState.h" />
+    <ClInclude Include="src\Common\NODBCHandler.h" />
+    <ClInclude Include="src\Common\NOutputTextMgr.h" />
+    <ClInclude Include="src\Common\NSyncObject.h" />
+    <ClInclude Include="src\Common\NSystem\NIPAddr.h" />
+    <ClInclude Include="src\Common\Packet.h" />
+    <ClInclude Include="src\Common\PacketClient.h" />
+    <ClInclude Include="src\Common\PacketLengthExMgr.h" />
+    <ClInclude Include="src\Common\PacketServer.h" />
+    <ClInclude Include="src\Common\PacketStruct.h" />
+    <ClInclude Include="src\Common\ScriptParser.h" />
+    <ClInclude Include="src\Common\ServerIdentity.h" />
+    <ClInclude Include="src\Common\ServerInfoList.h" />
+    <ClInclude Include="src\Common\Singleton.h" />
+    <ClInclude Include="src\Common\SyncObject.h" />
+    <ClInclude Include="src\Common\Thread.h" />
+    <ClInclude Include="src\CUserStreamMgr.h" />
+    <ClInclude Include="src\CZsvrStreamMgr.h" />
+    <ClInclude Include="src\DES.h" />
+    <ClInclude Include="src\Enums.h" />
+    <ClInclude Include="src\ForbiddenName.h" />
+    <ClInclude Include="src\ForceMap.h" />
+    <ClInclude Include="src\MsgInfo.h" />
+    <ClInclude Include="src\Network3\AsyncProcess.h" />
+    <ClInclude Include="src\Network3\AsyncProcessMgr.h" />
+    <ClInclude Include="src\Network3\CompletionPort.h" />
+    <ClInclude Include="src\Network3\Process.h" />
+    <ClInclude Include="src\Network3\ProcessFactory.h" />
+    <ClInclude Include="src\Network3\Stream.h" />
+    <ClInclude Include="src\Network3\StreamManager.h" />
+    <ClInclude Include="src\PremiumServiceDB.h" />
+    <ClInclude Include="src\PremiumServiceInfo.h" />
+    <ClInclude Include="src\PreventNameList.h" />
+    <ClInclude Include="src\StartMap.h" />
+    <ClCompile Include="src\StdAfx.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="src\UserAuthenticate.h" />
+    <ClInclude Include="src\UserList.h" />
+    <ClInclude Include="src\UserProcess.h" />
+    <ClInclude Include="src\UserVerify.h" />
+    <ClInclude Include="src\ZoneServerInfoList.h" />
+    <ClInclude Include="src\ZoneSvrProcess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3rdparty\lua\5.1.4\lua.vs2010.vcxproj">
+      <Project>{556974ab-ea07-46bd-a388-c875070e5cf1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\3rdparty\platform\platform-10.vcxproj">
+      <Project>{c6a5b15c-293c-40cc-9fae-c3a7a657e12c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

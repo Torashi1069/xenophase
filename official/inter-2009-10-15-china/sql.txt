@@ -1,0 +1,110 @@
+This file describes sql stored procedures used in inter-cro-2009-10-15, in wiki syntax.
+
+
+== CPartyDB ==
+
+Party data:
+* INTEGER GRID - id of the party/group
+* VARCHAR(24) groupName - name of the party/group
+* INTEGER PartyRuleValue - item rules (bit 1=ItemPickupRule, bit 2=ItemDivisionRule)
+
+Party member data:
+* INTEGER GID - character id of the member
+* INTEGER AID - account id of the member
+* VARCHAR(24) charName - name of the member
+* INTEGER GRID - party/group id of the member
+* INTEGER Role - role of the member (0=owner/master, 1=normal member?)
+
+
+=== "{call InsertGroup(?)}" ===
+
+Creates a party/group with the given name and default item rules.
+* input param 1 : VARCHAR(24) groupName - name of the party/group
+
+
+=== "{call InsertGroup(?,?)}" ===
+
+Creates a party/group with the given name and the given item rules.
+* input param 1 : VARCHAR(24) groupName - name of the party/group
+* input param 2 : INTEGER PartyRuleValue - item rules (bit 1=ItemPickupRule, bit 2=ItemDivisionRule)
+
+
+=== "{call GetGroupName(?)}" ===
+
+Gets the name of the party/group with the given id.
+Generates 1 row of results.
+* input param 1 : INTEGER GRID - id of the party/group
+* result column 1 : VARCHAR(24) groupName - name of the party/group
+
+
+=== "{call GetGroupInfo(?)}" ===
+
+Gets the name and the item rules of the party/group with the given id.
+Generates 1 row of results.
+* input param 1 : INTEGER GRID - id of the party/group
+* result column 1 : VARCHAR(24) groupName - name of the party/group
+* result column 2 : INTEGER PartyRuleValue - item rules (bit 1=ItemPickupRule, bit 2=ItemDivisionRule)
+
+
+=== "{call DeleteGroupByName(?)}" ===
+
+Deletes the party/group with the given name.
+* input param 1 : VARCHAR(24) groupName - name of the party/group
+
+
+=== "{call DeleteGroup(?)}" ===
+
+Deletes the party/group with the givin id.
+* input param 1 : INTEGER GRID - id of the party/group
+
+
+=== "{call GetGroupID(?)}" ===
+
+Gets the id of the party/group with the given name.
+Generates 1 row of results if the party exists
+Generates nothing if the party isn't found.
+* input param 1 : VARCHAR(24) groupName - name of the party/group
+* result column 1 : INTEGER GRID - id of the party/group
+
+
+=== "{call GetGroupMembers(?)}" ===
+
+Gets a list of members in the party/group with the given id.
+Generates 1 row of results per member.
+* input param 1 : INTEGER GRID - id of the party/group
+* result column 1 : INTEGER GID - character id of the member
+* result column 2 : INTEGER AID - account id of the member
+* result column 3 : VARCHAR(24) charName - name of the member
+* result column 4 : INTEGER GRID - party/group id of the member
+* result column 5 : INTEGER Role - role of the member (0=owner/master, 1=normal member?)
+
+
+=== "{call InsertMember(?,?,?,?,?)}" ===
+
+Adds a party/group member to the database.
+* input param 1 : INTEGER GID - character id of the member
+* input param 2 : INTEGER AID - account id of the member
+* input param 3 : VARCHAR(24) charName - name of the member
+* input param 4 : INTEGER GRID - party/group id of the member
+* input param 5 : INTEGER Role - role of the member (0=owner/master, 1=normal member?)
+
+
+=== "{call DeleteMember(?)}" ===
+
+Deletes the party/group member with the given character id.
+* input param 1 : INTEGER GID - character id of the member
+
+
+=== "{call DeleteMemberByName(?)}" ===
+
+Deletes the party/group member with the given name.
+* input param 1 : VARCHAR(24) charName - name of the member
+
+
+=== "{call GetMember(?)}" ===
+
+Gets the party/group id of the member with the given character id.
+Generates 1 row of results if the member exists
+Generates nothing if the member isn't found.
+* input param 1 : INTEGER GID - character id of the member
+* result column 1 : INTEGER GRID - id of the party/group

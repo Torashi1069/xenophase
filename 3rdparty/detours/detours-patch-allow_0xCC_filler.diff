@@ -1,0 +1,14 @@
+=== src/detours.cpp
+==================================================================
+--- src/detours.cpp	(original)
++++ src/detours.cpp	(local)
+@@ -186,7 +186,8 @@
+ 
+ inline ULONG detour_is_code_filler(PBYTE pbCode)
+ {
+-    if (pbCode[0] == 0x90) { // nop
++    if (pbCode[0] == 0x90 || // nop
++        pbCode[0] == 0xCC) { // int 3
+         return 1;
+     }
+     return 0;

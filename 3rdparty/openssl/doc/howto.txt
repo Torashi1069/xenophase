@@ -1,0 +1,30 @@
+Building OpenSSL
+----------------
+
+The libraries here were built using:
+* OpenSSL 1.0.1c (http://www.openssl.org)
+* Perl 5.14.2 (http://strawberryperl.com)
+* NASM 2.10.05 (http://www.nasm.us)
+* Microsoft Visual C++ 2008
+* Microsoft Windows SDK 7.1
+* custom.diff modifications to nt.mak
+
+Instructions:
+* prepare suitable build environment
+* extract openssl-1.0.1c.tar.gz
+* read OpenSSL's INSTALL.W32
+> perl Configure VC-WIN32
+> ms\do_nasm.bat
+> patch -p 0 < custom.diff
+> nmake -f ms\nt.mak
+* take headers from /include/openssl
+* take libs from /out32
+
+Patch 'custom.diff' does the following:
+* change debugging symbols from /Zi (external PDB) to /Z7 (embedded CodeView)
+* remove /Fd parameter from LIB_CFLAG (defines PDB filename, forces PDB creation)
+* change library output filenames (libeay32 -> libcrypto, ssleay32 -> libssl)
+
+Notes:
+* NASM 2.03.01 (2008-06-16) produces incorrect SSE3 output for SHA1 code
+* files in /include are relative symlinks, make note of that when trying to copy them

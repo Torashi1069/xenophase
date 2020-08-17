@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{2838a009-eaf1-4e43-9c5d-83919b5e0382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\NSystem">
+      <UniqueIdentifier>{6593ad98-aba4-44a7-92c7-417e9eeca06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\N3System">
+      <UniqueIdentifier>{9509da90-0763-47f1-9353-46cd60f93635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetLib">
+      <UniqueIdentifier>{4c96adcb-e7a2-4582-8916-0ca754f76987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3cb9884a-69b1-4e52-9848-fecda4cfedd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{313e3daa-0b0b-4c46-a733-d328a2240563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\CharacterServerClient">
+      <UniqueIdentifier>{c83801bc-4464-4fa6-820e-c115dbd473f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\InterServerClient">
+      <UniqueIdentifier>{aa5711ed-f067-42ca-a2a0-11d60e6daf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Instant map">
+      <UniqueIdentifier>{ad3a2c79-b5ed-4611-8cad-a17ab76c8bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\BrazilDaemonServerClient">
+      <UniqueIdentifier>{b3836fa9-bd1e-445f-9fd5-7d8eb4c6b421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsyncDBWork">
+      <UniqueIdentifier>{bfa6d2d6-deac-4b67-bc84-55e30650e394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{f0c4ebbe-be4f-4df7-8746-8fe6f3d4e0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Inventory">
+      <UniqueIdentifier>{12362035-51b0-4ebb-b29b-2b005d3070b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptLib">
+      <UniqueIdentifier>{6ddd32dd-7d18-4470-8bcb-390903be7135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NpcServer">
+      <UniqueIdentifier>{3290988c-4b6f-4a68-979b-7adb3f4e062a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="!dll">
+      <UniqueIdentifier>{6ed6a285-e97f-4e8d-b984-b163a7beed85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hook.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\dll.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\ZZZalloc.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZoneProcess.cpp" />
+    <ClCompile Include="src\StdAfx.h" />
+    <ClCompile Include="src\shared\MyMiniDumpUnhandledExceptionHandler.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NFileLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NSystem\NSyncObject.cpp">
+      <Filter>shared\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NCriticalErrorLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NTraceLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3MessageMgr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3SyncObject.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBC.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2Connector.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2Util.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ErrorLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ServerInfo.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\Acceptor.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NSystem\NIPAddr.cpp">
+      <Filter>shared\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\PacketHandler.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\PacketQueue.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ISvrIOPacketHandler.cpp" />
+    <ClCompile Include="src\Common\Packet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\PacketLengthExMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NOutputTextMgr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3Object.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3IPAddr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3MessageQueue.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\AsyncStream.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NNetworkMgr.cpp" />
+    <ClCompile Include="src\NNetworkWorkThread.cpp" />
+    <ClCompile Include="src\shared\N3System\N3Thread.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2Client.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2StreamObject.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2ClientMgr.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2ClientWorkThread.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3DataTransferMgr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVar.cpp" />
+    <ClCompile Include="src\Client\InterServerClient\C2InterServerClient.cpp">
+      <Filter>Client\InterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\InterServerClient\C2InterServerClientPacketHandler.cpp">
+      <Filter>Client\InterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\CharacterServerClient\C2CharacterServerClient.cpp">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\CharacterServerClient\C2CharacterServerClientPacketHandler.cpp">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZsvrSchedulerIdentity.cpp" />
+    <ClCompile Include="src\HSvrIOPacketHandler.cpp" />
+    <ClCompile Include="src\CharacterMgr.cpp" />
+    <ClCompile Include="src\CZsvrSchedulerIdentity.cpp" />
+    <ClCompile Include="src\Instant map\InstantMapMgr.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClient.cpp">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClientPacketHandler.cpp">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapConfiguration.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapCtrl.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapWorkerThread.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapLib.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZSAcceptHandler.cpp" />
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBMgr.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXObject.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NIDAllocator.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXSyncObject.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXInter.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NInterMessageQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NInterMessageSystem.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NODBCCtrl.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBRequestCircularQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBResponseCircularQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBThread.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXThread.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NTPMessageQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZoneProcessLocalConfigMgr.cpp" />
+    <ClCompile Include="src\shared\NLuaState.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZoneProcessConfigMgr.cpp" />
+    <ClCompile Include="src\AsyncDBWork\LogonPermitADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MercenaryDB.cpp" />
+    <ClCompile Include="src\PC.cpp" />
+    <ClCompile Include="src\AsyncDBWork\Effect3rd.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\Effect3rdDeleteADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NODBCHandler.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\Effect3rdUpdateAllADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcHomun.cpp" />
+    <ClCompile Include="src\MercenaryDBV2.cpp" />
+    <ClCompile Include="src\PCBattleMercenary.cpp" />
+    <ClCompile Include="src\NPCElemental.cpp" />
+    <ClCompile Include="src\shared\ZLib.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\Client.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\shared.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FactorVAR.cpp" />
+    <ClCompile Include="src\NeighborCache.cpp" />
+    <ClCompile Include="src\MSGpar.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\CDisconnectLog.cpp" />
+    <ClCompile Include="src\Actor.cpp" />
+    <ClCompile Include="src\PCPacketHandler.cpp" />
+    <ClCompile Include="src\CSAuth.cpp" />
+    <ClCompile Include="src\PCItem.cpp" />
+    <ClCompile Include="src\Player\Inventory\CIVItItem.cpp">
+      <Filter>Player\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Skill.cpp" />
+    <ClCompile Include="src\Item.cpp" />
+    <ClCompile Include="src\NPC.cpp" />
+    <ClCompile Include="src\GlobalVarDB.cpp" />
+    <ClCompile Include="src\ScriptEventHandler.cpp" />
+    <ClCompile Include="src\ScriptLib\BinBuf.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptLib\Interpreter.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptLib\TokenData.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptEventHandlerFunc.cpp" />
+    <ClCompile Include="src\NpcServer\NpcEvent.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcEvt.cpp" />
+    <ClCompile Include="src\AsyncDBWork\LoadCartADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\SaveCartADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EStateTypeInfoMgr.cpp" />
+    <ClCompile Include="src\EStateTypeInfo.cpp" />
+    <ClCompile Include="src\AsyncDBWork\SaveAllADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\CMapInfoMgr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3ODBCCtrl.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3ODBCHandler.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ZoneProcess.h" />
+    <ClInclude Include="src\shared\MyMiniDumpUnhandledExceptionHandler.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NFileLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NSystem\NSyncObject.h">
+      <Filter>shared\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NCriticalErrorLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NTraceLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3MessageMgr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Inter.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3SyncObject.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBC.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2Connector.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2Util.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ErrorLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ServerInfo.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\Acceptor.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NSystem\NIPAddr.h">
+      <Filter>shared\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\Addr.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\PacketHandler.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\PacketQueue.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISvrIOPacketHandler.h" />
+    <ClInclude Include="src\Common\Packet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketLengthExMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NOutputTextMgr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Object.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3IPAddr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3MessageQueue.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\AsyncStream.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NNetworkMgr.h" />
+    <ClInclude Include="src\NNetworkWorkThread.h" />
+    <ClInclude Include="src\shared\N3System\N3Thread.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2Client.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2StreamObject.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2ClientMgr.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2ClientWorkThread.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3DataTransferMgr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Scheduler.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZsvrSchedulerIdentity.h" />
+    <ClInclude Include="src\GVar.h" />
+    <ClInclude Include="src\Client\InterServerClient\C2InterServerClient.h">
+      <Filter>Client\InterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\InterServerClient\C2InterServerClientPacketHandler.h">
+      <Filter>Client\InterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\CharacterServerClient\C2CharacterServerClient.h">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\CharacterServerClient\C2CharacterServerClientPacketHandler.h">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\MemoryMgr.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZsvrSchedulerIdentity.h" />
+    <ClInclude Include="src\Instant map\InstantMapMgr.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HSvrIOPacketHandler.h" />
+    <ClInclude Include="src\CharacterMgr.h" />
+    <ClInclude Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClient.h">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClientPacketHandler.h">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapConfiguration.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapCtrl.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapWorkerThread.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapLib.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZSAcceptHandler.h" />
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBMgr.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXObject.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NIDAllocator.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXSyncObject.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXInter.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NInterMessageQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NInterMessageSystem.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NODBCCtrl.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBRequestCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBResponseCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBThread.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXThread.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NTPMessageQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ObjectRecycleMgr.h" />
+    <ClInclude Include="src\AsyncDBWork\NCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZoneProcessLocalConfigMgr.h" />
+    <ClInclude Include="src\shared\NLuaState.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZoneProcessConfigMgr.h" />
+    <ClInclude Include="src\AsyncDBWork\LogonPermitADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MercenaryDB.h" />
+    <ClInclude Include="src\HomunDataStuff.h" />
+    <ClInclude Include="src\PC.h" />
+    <ClInclude Include="src\AsyncDBWork\Effect3rd.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\Effect3rdDeleteADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NODBCHandler.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\Effect3rdUpdateAllADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcHomun.h" />
+    <ClInclude Include="src\MercenaryDBV2.h" />
+    <ClInclude Include="src\PCBattleMercenary.h" />
+    <ClInclude Include="src\NPCElemental.h" />
+    <ClInclude Include="src\shared\ZLib.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\Client.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enum.h" />
+    <ClInclude Include="src\shared\shared.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FactorVAR.h" />
+    <ClInclude Include="src\InstantVar.h" />
+    <ClInclude Include="src\NeighborCache.h" />
+    <ClInclude Include="src\MSGpar.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\CDisconnectLog.h" />
+    <ClInclude Include="src\Actor.h" />
+    <ClInclude Include="src\PCPacketHandler.h" />
+    <ClInclude Include="src\CSAuth.h" />
+    <ClInclude Include="src\Struct.h" />
+    <ClInclude Include="src\PCItem.h" />
+    <ClInclude Include="src\Player\Inventory\CInventoryItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player\Inventory\CIVItItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Skill.h" />
+    <ClInclude Include="src\Item.h" />
+    <ClInclude Include="src\NPC.h" />
+    <ClInclude Include="src\GlobalVarDB.h" />
+    <ClInclude Include="src\ScriptEventHandler.h" />
+    <ClInclude Include="src\ScriptLib\BinBuf.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptLib\Interpreter.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptLib\TokenData.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcServer\NpcEvent.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Msg.h" />
+    <ClInclude Include="src\NpcEvt.h" />
+    <ClInclude Include="src\AsyncDBWork\LoadCartADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\SaveCartADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EStateTypeInfoMgr.h" />
+    <ClInclude Include="src\EStateTypeInfo.h" />
+    <ClInclude Include="src\AsyncDBWork\SaveAllADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\CMapInfoMgr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3ODBCCtrl.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3ODBCHandler.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

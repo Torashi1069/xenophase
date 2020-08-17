@@ -1,0 +1,37 @@
+=== src/modules.cpp
+==================================================================
+--- src/modules.cpp	(original)
++++ src/modules.cpp	(local)
+@@ -260,18 +260,22 @@
+         }
+     }
+ 
++	CHAR szModuleName[512];
++	if (GetModuleFileNameA(hModule, szModuleName, sizeof(szModuleName)) == 0) {
++        DETOUR_TRACE(("GetModuleFileNameA failed: %d\n", GetLastError()));
++		return NULL;
++	}
++
++	CHAR* pszModuleExt = strrchr(szModuleName, '.');
++	if( pszModuleExt != NULL )
++		*pszModuleExt = '\0';
++
++	CHAR* pszModuleName = strrchr(szModuleName, '\\');
++	pszModuleName = ( pszModuleName != NULL ) ? pszModuleName + 1 : szModuleName;
++
+     HRESULT hrRet;
+     CHAR szFullName[512];
+-    IMAGEHLP_MODULE64 modinfo;
+-    ZeroMemory(&modinfo, sizeof(modinfo));
+-    modinfo.SizeOfStruct = sizeof(modinfo);
+-    if (!pSymInfo->pfSymGetModuleInfo64(pSymInfo->hProcess, (DWORD64)hModule, &modinfo)) {
+-        DETOUR_TRACE(("SymGetModuleInfo64(%p, %p) failed: %d\n",
+-                      pSymInfo->hProcess, hModule, GetLastError()));
+-        return NULL;
+-    }
+-
+-    hrRet = StringCchCopyA(szFullName, sizeof(szFullName)/sizeof(CHAR), modinfo.ModuleName);
++    hrRet = StringCchCopyA(szFullName, sizeof(szFullName)/sizeof(CHAR), pszModuleName);
+     if (FAILED(hrRet)) {
+         DETOUR_TRACE(("StringCchCopyA failed: %08x\n", hrRet));
+         return NULL;

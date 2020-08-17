@@ -1,0 +1,1211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{2838a009-eaf1-4e43-9c5d-83919b5e0382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\NSystem">
+      <UniqueIdentifier>{6593ad98-aba4-44a7-92c7-417e9eeca06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\N3System">
+      <UniqueIdentifier>{9509da90-0763-47f1-9353-46cd60f93635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetLib">
+      <UniqueIdentifier>{4c96adcb-e7a2-4582-8916-0ca754f76987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3cb9884a-69b1-4e52-9848-fecda4cfedd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{313e3daa-0b0b-4c46-a733-d328a2240563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\CharacterServerClient">
+      <UniqueIdentifier>{c83801bc-4464-4fa6-820e-c115dbd473f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\InterServerClient">
+      <UniqueIdentifier>{aa5711ed-f067-42ca-a2a0-11d60e6daf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Instant map">
+      <UniqueIdentifier>{ad3a2c79-b5ed-4611-8cad-a17ab76c8bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\BrazilDaemonServerClient">
+      <UniqueIdentifier>{b3836fa9-bd1e-445f-9fd5-7d8eb4c6b421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsyncDBWork">
+      <UniqueIdentifier>{bfa6d2d6-deac-4b67-bc84-55e30650e394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{f0c4ebbe-be4f-4df7-8746-8fe6f3d4e0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Inventory">
+      <UniqueIdentifier>{12362035-51b0-4ebb-b29b-2b005d3070b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptLib">
+      <UniqueIdentifier>{6ddd32dd-7d18-4470-8bcb-390903be7135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NpcServer">
+      <UniqueIdentifier>{3290988c-4b6f-4a68-979b-7adb3f4e062a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="!dll">
+      <UniqueIdentifier>{6ed6a285-e97f-4e8d-b984-b163a7beed85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memorial Dungeon">
+      <UniqueIdentifier>{276f110e-522d-4145-94d3-91dec8c6958c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaMonsterAI">
+      <UniqueIdentifier>{fd7add88-d892-403f-bcad-e89ea361e7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\N2System">
+      <UniqueIdentifier>{7d64d1f5-b9ae-4491-8954-6e1b64831131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\N2System\FTA%28Formated Text Analyzer%29">
+      <UniqueIdentifier>{6a1e2ad0-4df8-47b2-b6b4-4a09afb4667e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameGuard">
+      <UniqueIdentifier>{5a53b56c-7689-40e9-b489-88c3f7e6f791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ItemServer">
+      <UniqueIdentifier>{5bba496c-1b46-4563-bc26-ff7ea08d5ab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hook.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\dll.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\ZZZalloc.cpp">
+      <Filter>!dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZoneProcess.cpp" />
+    <ClCompile Include="src\StdAfx.h" />
+    <ClCompile Include="src\shared\MyMiniDumpUnhandledExceptionHandler.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NFileLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NSystem\NSyncObject.cpp">
+      <Filter>shared\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NCriticalErrorLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NTraceLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3MessageMgr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3SyncObject.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBC.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2Connector.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ODBCV2Util.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ErrorLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ServerInfo.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\Acceptor.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NSystem\NIPAddr.cpp">
+      <Filter>shared\NSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\PacketHandler.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\PacketQueue.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ISvrIOPacketHandler.cpp" />
+    <ClCompile Include="src\Common\Packet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\PacketLengthExMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\NOutputTextMgr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3Object.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3IPAddr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3MessageQueue.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetLib\AsyncStream.cpp">
+      <Filter>NetLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NNetworkMgr.cpp" />
+    <ClCompile Include="src\NNetworkWorkThread.cpp" />
+    <ClCompile Include="src\shared\N3System\N3Thread.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2Client.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2StreamObject.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2ClientMgr.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\C2ClientWorkThread.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3DataTransferMgr.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVar.cpp" />
+    <ClCompile Include="src\Client\InterServerClient\C2InterServerClient.cpp">
+      <Filter>Client\InterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\InterServerClient\C2InterServerClientPacketHandler.cpp">
+      <Filter>Client\InterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\CharacterServerClient\C2CharacterServerClient.cpp">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\CharacterServerClient\C2CharacterServerClientPacketHandler.cpp">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZsvrSchedulerIdentity.cpp" />
+    <ClCompile Include="src\HSvrIOPacketHandler.cpp" />
+    <ClCompile Include="src\CharacterMgr.cpp" />
+    <ClCompile Include="src\CZsvrSchedulerIdentity.cpp" />
+    <ClCompile Include="src\Instant map\InstantMapMgr.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClient.cpp">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClientPacketHandler.cpp">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapConfiguration.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapCtrl.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapWorkerThread.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Instant map\InstantMapLib.cpp">
+      <Filter>Instant map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZSAcceptHandler.cpp" />
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBMgr.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXObject.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NIDAllocator.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXSyncObject.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXInter.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NInterMessageQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NInterMessageSystem.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NODBCCtrl.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBRequestCircularQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBResponseCircularQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NAsyncDBThread.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NXThread.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NTPMessageQueue.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZoneProcessLocalConfigMgr.cpp" />
+    <ClCompile Include="src\shared\NLuaState.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CZoneProcessConfigMgr.cpp" />
+    <ClCompile Include="src\AsyncDBWork\LogonPermitADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MercenaryDB.cpp" />
+    <ClCompile Include="src\PC.cpp" />
+    <ClCompile Include="src\AsyncDBWork\Effect3rd.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\Effect3rdDeleteADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\NODBCHandler.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\Effect3rdUpdateAllADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcHomun.cpp" />
+    <ClCompile Include="src\MercenaryDBV2.cpp" />
+    <ClCompile Include="src\PCBattleMercenary.cpp" />
+    <ClCompile Include="src\NPCElemental.cpp" />
+    <ClCompile Include="src\shared\ZLib.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\Client.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\shared.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FactorVAR.cpp" />
+    <ClCompile Include="src\NeighborCache.cpp" />
+    <ClCompile Include="src\MSGpar.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\CDisconnectLog.cpp" />
+    <ClCompile Include="src\Actor.cpp" />
+    <ClCompile Include="src\PCPacketHandler.cpp" />
+    <ClCompile Include="src\PCItem.cpp" />
+    <ClCompile Include="src\Player\Inventory\CIVItItem.cpp">
+      <Filter>Player\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Skill.cpp" />
+    <ClCompile Include="src\Item.cpp" />
+    <ClCompile Include="src\NPC.cpp" />
+    <ClCompile Include="src\GlobalVarDB.cpp" />
+    <ClCompile Include="src\ScriptEventHandler.cpp" />
+    <ClCompile Include="src\ScriptLib\BinBuf.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptLib\Interpreter.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptLib\TokenData.cpp">
+      <Filter>ScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptEventHandlerFunc.cpp" />
+    <ClCompile Include="src\NpcServer\NpcEvent.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcEvt.cpp" />
+    <ClCompile Include="src\AsyncDBWork\LoadCartADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\SaveCartADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EStateTypeInfoMgr.cpp" />
+    <ClCompile Include="src\EStateTypeInfo.cpp" />
+    <ClCompile Include="src\AsyncDBWork\SaveAllADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\CMapInfoMgr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3ODBCCtrl.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N3System\N3ODBCHandler.cpp">
+      <Filter>shared\N3System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\DES.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\CDateTime.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memorial Dungeon\MemorialDungeon.cpp">
+      <Filter>Memorial Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memorial Dungeon\MemorialDungeonMgr.cpp">
+      <Filter>Memorial Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\Guild.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\GuildMgr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\GuildDB.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZGuildInfo.cpp" />
+    <ClCompile Include="src\ZGuildInfoDB.cpp" />
+    <ClCompile Include="src\ZGuildMgr.cpp" />
+    <ClCompile Include="src\ZGuildPacketDispatcher.cpp" />
+    <ClCompile Include="src\PathFinder.cpp" />
+    <ClCompile Include="src\PriorityQueue.cpp" />
+    <ClCompile Include="src\HostPathFinder.cpp" />
+    <ClCompile Include="src\StackDumpLog.cpp" />
+    <ClCompile Include="src\Path.cpp" />
+    <ClCompile Include="src\ZoneProcessStuff.cpp" />
+    <ClCompile Include="src\Common\ServerIdentity.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapResMgr.cpp" />
+    <ClCompile Include="src\MapRes.cpp" />
+    <ClCompile Include="src\MapTypeProperty.cpp" />
+    <ClCompile Include="src\MapTypePropertyMgr.cpp" />
+    <ClCompile Include="src\AgitMapRes.cpp" />
+    <ClCompile Include="src\MapResScheduler.cpp" />
+    <ClCompile Include="src\MapPropertyCountPK.cpp" />
+    <ClCompile Include="src\SectionMgr.cpp" />
+    <ClCompile Include="src\BattleFieldMapRes.cpp" />
+    <ClCompile Include="src\AgitDB.cpp" />
+    <ClCompile Include="src\shared\CProgrammerSupportLog.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CThreadAffinityMgr.cpp" />
+    <ClCompile Include="src\TestButton.cpp" />
+    <ClCompile Include="src\CProcessMgr.cpp" />
+    <ClCompile Include="src\ItemLog.cpp" />
+    <ClCompile Include="src\shared\CriticalSection.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ExtendedODBC.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SSIMgr.cpp" />
+    <ClCompile Include="src\SSIList.cpp" />
+    <ClCompile Include="src\SSIListBase.cpp" />
+    <ClCompile Include="src\SSIReqList.cpp" />
+    <ClCompile Include="src\SearchingSSIList.cpp" />
+    <ClCompile Include="src\FTToken.cpp" />
+    <ClCompile Include="src\FTLexicalAnaysis.cpp" />
+    <ClCompile Include="src\FTFile.cpp" />
+    <ClCompile Include="src\ITP.cpp" />
+    <ClCompile Include="src\ITPMgr.cpp" />
+    <ClCompile Include="src\NpcServer\NpcObj.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcServer\NpcSvr.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcServer\CStaticNpcMgr.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NpcServer\NpcMgr.cpp">
+      <Filter>NpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DGNpcMgr.cpp" />
+    <ClCompile Include="src\DGNpcBin.cpp" />
+    <ClCompile Include="src\MonParameterMgr.cpp" />
+    <ClCompile Include="src\MonParameterTable.cpp" />
+    <ClCompile Include="src\QuestArlimi.cpp" />
+    <ClCompile Include="src\QuestProviso.cpp" />
+    <ClCompile Include="src\QVar.cpp" />
+    <ClCompile Include="src\ArlimiMap.cpp" />
+    <ClCompile Include="src\QuestEventMgr.cpp" />
+    <ClCompile Include="src\QuestMission.cpp" />
+    <ClCompile Include="src\QuestArlimiTxt.cpp" />
+    <ClCompile Include="src\QFile.cpp" />
+    <ClCompile Include="src\FuncExtraction.cpp" />
+    <ClCompile Include="src\PCQuestEvent.cpp" />
+    <ClCompile Include="src\QuestTFile.cpp" />
+    <ClCompile Include="src\QuestTFSector.cpp" />
+    <ClCompile Include="src\ScriptCompiler.cpp" />
+    <ClCompile Include="src\ScriptEventMgr.cpp" />
+    <ClCompile Include="src\ActorScheduler.cpp" />
+    <ClCompile Include="src\CharBuff.cpp" />
+    <ClCompile Include="src\FixedSKcastingTMvar.cpp" />
+    <ClCompile Include="src\NPCUpdater.cpp" />
+    <ClCompile Include="src\NPCSkill.cpp" />
+    <ClCompile Include="src\NPCStateUpdater.cpp" />
+    <ClCompile Include="src\FSMMgr.cpp" />
+    <ClCompile Include="src\FSM.cpp" />
+    <ClCompile Include="src\FSMState.cpp" />
+    <ClCompile Include="src\NpcMob.cpp" />
+    <ClCompile Include="src\CharSkill.cpp" />
+    <ClCompile Include="src\NpcMobRecycleMgr.cpp" />
+    <ClCompile Include="src\CStaticNPCAIDGenerator.cpp" />
+    <ClCompile Include="src\shared\NLuaThread.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCClientUpdater.cpp" />
+    <ClCompile Include="src\LuaMonsterAI\NLuaMonsterAI.cpp">
+      <Filter>LuaMonsterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LuaMonsterAI\NLuaMonsterAIGlueFunc.cpp">
+      <Filter>LuaMonsterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LuaMonsterAI\NLuaMonsterAIMgr.cpp">
+      <Filter>LuaMonsterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkillTypeInfoMgr.cpp" />
+    <ClCompile Include="src\SkillTypeBaseInfo.cpp" />
+    <ClCompile Include="src\SkillTypeInfo.cpp" />
+    <ClCompile Include="src\SkillTypeInfo2.cpp" />
+    <ClCompile Include="src\SkillScriptHandler.cpp" />
+    <ClCompile Include="src\SkillTypeInfo3rd2_ShadowChaser.cpp" />
+    <ClCompile Include="src\PCSkill.cpp" />
+    <ClCompile Include="src\SkillTypeInfo2_2(2).cpp" />
+    <ClCompile Include="src\MobTombInfo.cpp" />
+    <ClCompile Include="src\PCHireItemCtrl.cpp" />
+    <ClCompile Include="src\PCElemental.cpp" />
+    <ClCompile Include="src\Player\Inventory\CIVItEquipItem.cpp">
+      <Filter>Player\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player\Inventory\CIVItNormalItem.cpp">
+      <Filter>Player\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImportantItem.cpp" />
+    <ClCompile Include="src\PCItemInventoryMgr.cpp" />
+    <ClCompile Include="src\CAuctionCtrl.cpp" />
+    <ClCompile Include="src\CAuctionDB.cpp" />
+    <ClCompile Include="src\ZSAcceptThread.cpp" />
+    <ClCompile Include="src\shared\N2System\N2IDAllocator.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2IDGenerator.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2IDGenerator36.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2InterMessageSystem.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2Object.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2SyncObject.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2SystemMgr.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\N2Thread.cpp">
+      <Filter>shared\N2System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CMemorialDungeonFileLog.cpp" />
+    <ClCompile Include="src\CSectionLog.cpp" />
+    <ClCompile Include="src\AsyncDBWork\LoadWarpInfoADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RuneItemInfo.cpp" />
+    <ClCompile Include="src\ZoneScript.cpp" />
+    <ClCompile Include="src\EStateTypeInfo3rd1_blreo.cpp" />
+    <ClCompile Include="src\EStateTypeInfo3rd2_blreo.cpp" />
+    <ClCompile Include="src\SkillTypeInfo3rd1_Warlock.cpp" />
+    <ClCompile Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAFile.cpp">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTALexicalAnalyzer.cpp">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAToken.cpp">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAVar.cpp">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CFontShopMgr.cpp" />
+    <ClCompile Include="src\CUserBlockMgr.cpp" />
+    <ClCompile Include="src\ExpParameter.cpp" />
+    <ClCompile Include="src\PCBattle.cpp" />
+    <ClCompile Include="src\PCBattleHomun.cpp" />
+    <ClCompile Include="src\CAutoSpellVar.cpp" />
+    <ClCompile Include="src\GameGuard\CSAuth.cpp">
+      <Filter>GameGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameGuard\CSAuth2.cpp">
+      <Filter>GameGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameGuard\ggsrv.cpp">
+      <Filter>GameGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharInfoDB.cpp" />
+    <ClCompile Include="src\PCProperty.cpp" />
+    <ClCompile Include="src\PCFormula_PhysicsSupport.cpp" />
+    <ClCompile Include="src\PCFormula_CommonSupport.cpp" />
+    <ClCompile Include="src\ActorFormula_CommonSupport.cpp" />
+    <ClCompile Include="src\SkillStuff.cpp" />
+    <ClCompile Include="src\EStateTypeInfo3rd2_Elemental.cpp" />
+    <ClCompile Include="src\CHPAmount.cpp" />
+    <ClCompile Include="src\CSPAmount.cpp" />
+    <ClCompile Include="src\CPCFriendClass.cpp" />
+    <ClCompile Include="src\SkillTypeInfo3rd1_Mechanic.cpp" />
+    <ClCompile Include="src\Room.cpp" />
+    <ClCompile Include="src\RoomMgr.cpp" />
+    <ClCompile Include="src\CheckUseItemList.cpp" />
+    <ClCompile Include="src\ItemServer\CEfstScriptEventHandler.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemServer\CItemScriptEventHandler.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemServer\specialitem.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemServer\specialitemmgr.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemServer\specialitemscanner.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemServer\specialitemdef.cpp">
+      <Filter>ItemServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\DeleteCoupleADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MakerRankMgr.cpp" />
+    <ClCompile Include="src\MakerRankDB.cpp" />
+    <ClCompile Include="src\PCItemInventory.cpp" />
+    <ClCompile Include="src\PCStoreItemIV.cpp" />
+    <ClCompile Include="src\Inventory.cpp" />
+    <ClCompile Include="src\PCCartItemIV.cpp" />
+    <ClCompile Include="src\PCBodyItemIV.cpp" />
+    <ClCompile Include="src\AsyncDBWork\MercenaryDeleteADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\MercenaryCreateADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\SaveSkillADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\SaveStoreADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\LoadStoreADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player\AmpLogonPermit.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\ElementalCreateADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncDBWork\ElementalDeleteADBWork.cpp">
+      <Filter>AsyncDBWork</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ZoneProcess.h" />
+    <ClInclude Include="src\shared\MyMiniDumpUnhandledExceptionHandler.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NFileLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NSystem\NSyncObject.h">
+      <Filter>shared\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NCriticalErrorLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NTraceLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3MessageMgr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Inter.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3SyncObject.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBC.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2Connector.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ODBCV2Util.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ErrorLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ServerInfo.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\Acceptor.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NSystem\NIPAddr.h">
+      <Filter>shared\NSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\Addr.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\PacketHandler.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\PacketQueue.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISvrIOPacketHandler.h" />
+    <ClInclude Include="src\Common\Packet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketLengthExMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\PacketServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\NOutputTextMgr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Object.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3IPAddr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3MessageQueue.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\AsyncStream.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NNetworkMgr.h" />
+    <ClInclude Include="src\NNetworkWorkThread.h" />
+    <ClInclude Include="src\shared\N3System\N3Thread.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2Client.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2StreamObject.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2ClientMgr.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\C2ClientWorkThread.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3DataTransferMgr.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3Scheduler.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZsvrSchedulerIdentity.h" />
+    <ClInclude Include="src\GVar.h" />
+    <ClInclude Include="src\Client\InterServerClient\C2InterServerClient.h">
+      <Filter>Client\InterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\InterServerClient\C2InterServerClientPacketHandler.h">
+      <Filter>Client\InterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\CharacterServerClient\C2CharacterServerClient.h">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\CharacterServerClient\C2CharacterServerClientPacketHandler.h">
+      <Filter>Client\CharacterServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetLib\MemoryMgr.h">
+      <Filter>NetLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZsvrSchedulerIdentity.h" />
+    <ClInclude Include="src\Instant map\InstantMapMgr.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HSvrIOPacketHandler.h" />
+    <ClInclude Include="src\CharacterMgr.h" />
+    <ClInclude Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClient.h">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\BrazilDaemonServerClient\C2BrazilDaemonServerClientPacketHandler.h">
+      <Filter>Client\BrazilDaemonServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapConfiguration.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapCtrl.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapWorkerThread.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Instant map\InstantMapLib.h">
+      <Filter>Instant map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZSAcceptHandler.h" />
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBMgr.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXObject.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NIDAllocator.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXSyncObject.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXInter.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NInterMessageQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NInterMessageSystem.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NODBCCtrl.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBRequestCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBResponseCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NAsyncDBThread.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NXThread.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NTPMessageQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ObjectRecycleMgr.h" />
+    <ClInclude Include="src\AsyncDBWork\NCircularQueue.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZoneProcessLocalConfigMgr.h" />
+    <ClInclude Include="src\shared\NLuaState.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CZoneProcessConfigMgr.h" />
+    <ClInclude Include="src\AsyncDBWork\LogonPermitADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MercenaryDB.h" />
+    <ClInclude Include="src\HomunDataStuff.h" />
+    <ClInclude Include="src\PC.h" />
+    <ClInclude Include="src\AsyncDBWork\Effect3rd.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\Effect3rdDeleteADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\NODBCHandler.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\Effect3rdUpdateAllADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcHomun.h" />
+    <ClInclude Include="src\MercenaryDBV2.h" />
+    <ClInclude Include="src\PCBattleMercenary.h" />
+    <ClInclude Include="src\NPCElemental.h" />
+    <ClInclude Include="src\shared\ZLib.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\Client.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enum.h" />
+    <ClInclude Include="src\shared\shared.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FactorVAR.h" />
+    <ClInclude Include="src\InstantVar.h" />
+    <ClInclude Include="src\NeighborCache.h" />
+    <ClInclude Include="src\MSGpar.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\CDisconnectLog.h" />
+    <ClInclude Include="src\Actor.h" />
+    <ClInclude Include="src\PCPacketHandler.h" />
+    <ClInclude Include="src\Struct.h" />
+    <ClInclude Include="src\PCItem.h" />
+    <ClInclude Include="src\Player\Inventory\CInventoryItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player\Inventory\CIVItItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Skill.h" />
+    <ClInclude Include="src\Item.h" />
+    <ClInclude Include="src\NPC.h" />
+    <ClInclude Include="src\GlobalVarDB.h" />
+    <ClInclude Include="src\ScriptEventHandler.h" />
+    <ClInclude Include="src\ScriptLib\BinBuf.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptLib\Interpreter.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptLib\TokenData.h">
+      <Filter>ScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcServer\NpcEvent.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Msg.h" />
+    <ClInclude Include="src\NpcEvt.h" />
+    <ClInclude Include="src\AsyncDBWork\LoadCartADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\SaveCartADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EStateTypeInfoMgr.h" />
+    <ClInclude Include="src\EStateTypeInfo.h" />
+    <ClInclude Include="src\AsyncDBWork\SaveAllADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\CMapInfoMgr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3ODBCCtrl.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N3System\N3ODBCHandler.h">
+      <Filter>shared\N3System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\DES.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\CDateTime.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memorial Dungeon\MemorialDungeon.h">
+      <Filter>Memorial Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memorial Dungeon\MemorialDungeonMgr.h">
+      <Filter>Memorial Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\MsgStrings.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\Guild.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\GuildMgr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\GuildDB.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZGuildInfo.h" />
+    <ClInclude Include="src\ZGuildInfoDB.h" />
+    <ClInclude Include="src\ZGuildMgr.h" />
+    <ClInclude Include="src\ZGuildPacketDispatcher.h" />
+    <ClInclude Include="src\PathFinder.h" />
+    <ClInclude Include="src\PriorityQueue.h" />
+    <ClInclude Include="src\HostPathFinder.h" />
+    <ClInclude Include="src\shared\PollTimer.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StackDumpLog.h" />
+    <ClInclude Include="src\Path.h" />
+    <ClInclude Include="src\ZoneProcessStuff.h" />
+    <ClInclude Include="src\Common\ServerIdentity.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rect.h" />
+    <ClInclude Include="src\MapResMgr.h" />
+    <ClInclude Include="src\MapRes.h" />
+    <ClInclude Include="src\MapTypeProperty.h" />
+    <ClInclude Include="src\MapTypePropertyMgr.h" />
+    <ClInclude Include="src\AgitMapRes.h" />
+    <ClInclude Include="src\MapResScheduler.h" />
+    <ClInclude Include="src\MapPropertyCountPK.h" />
+    <ClInclude Include="src\SectionMgr.h" />
+    <ClInclude Include="src\BattleFieldMapRes.h" />
+    <ClInclude Include="src\AgitDB.h" />
+    <ClInclude Include="src\shared\CProgrammerSupportLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CThreadAffinityMgr.h" />
+    <ClInclude Include="src\TestButton.h" />
+    <ClInclude Include="src\CProcessMgr.h" />
+    <ClInclude Include="src\ItemLog.h" />
+    <ClInclude Include="src\shared\DatabaseLog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\CriticalSection.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ExtendedODBC.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SSIMgr.h" />
+    <ClInclude Include="src\SSIList.h" />
+    <ClInclude Include="src\SSIListBase.h" />
+    <ClInclude Include="src\SSIReqList.h" />
+    <ClInclude Include="src\SearchingSSIList.h" />
+    <ClInclude Include="src\FTToken.h" />
+    <ClInclude Include="src\FTLexicalAnaysis.h" />
+    <ClInclude Include="src\FTFile.h" />
+    <ClInclude Include="src\ITP.h" />
+    <ClInclude Include="src\ITPMgr.h" />
+    <ClInclude Include="src\NpcServer\NpcObj.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcServer\NpcSvr.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcServer\CStaticNpcMgr.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NpcServer\NpcMgr.h">
+      <Filter>NpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DGNpcMgr.h" />
+    <ClInclude Include="src\DGNpcBin.h" />
+    <ClInclude Include="src\MonParameterMgr.h" />
+    <ClInclude Include="src\MonParameterTable.h" />
+    <ClInclude Include="src\QuestArlimi.h" />
+    <ClInclude Include="src\QuestProviso.h" />
+    <ClInclude Include="src\QVar.h" />
+    <ClInclude Include="src\ArlimiMap.h" />
+    <ClInclude Include="src\QuestEventMgr.h" />
+    <ClInclude Include="src\QuestMission.h" />
+    <ClInclude Include="src\QuestArlimiTxt.h" />
+    <ClInclude Include="src\QFile.h" />
+    <ClInclude Include="src\FuncExtraction.h" />
+    <ClInclude Include="src\PCQuestEvent.h" />
+    <ClInclude Include="src\QuestTFile.h" />
+    <ClInclude Include="src\QuestTFSector.h" />
+    <ClInclude Include="src\ScriptCompiler.h" />
+    <ClInclude Include="src\ScriptEventMgr.h" />
+    <ClInclude Include="src\ActorScheduler.h" />
+    <ClInclude Include="src\CharBuff.h" />
+    <ClInclude Include="src\FixedSKcastingTMvar.h" />
+    <ClInclude Include="src\NPCUpdater.h" />
+    <ClInclude Include="src\NPCSkill.h" />
+    <ClInclude Include="src\NPCStateUpdater.h" />
+    <ClInclude Include="src\FSMMgr.h" />
+    <ClInclude Include="src\FSM.h" />
+    <ClInclude Include="src\FSMState.h" />
+    <ClInclude Include="src\NpcMob.h" />
+    <ClInclude Include="src\CharSkill.h" />
+    <ClInclude Include="src\NpcMobRecycleMgr.h" />
+    <ClInclude Include="src\CStaticNPCAIDGenerator.h" />
+    <ClInclude Include="src\shared\NLuaThread.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCClientUpdater.h" />
+    <ClInclude Include="src\LuaMonsterAI\NLuaMonsterAI.h">
+      <Filter>LuaMonsterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaMonsterAI\NLuaMonsterAIGlueFunc.h">
+      <Filter>LuaMonsterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaMonsterAI\NLuaMonsterAIMgr.h">
+      <Filter>LuaMonsterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaMonsterAI\NLuaMonsterAIMsg.h">
+      <Filter>LuaMonsterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkillTypeInfoMgr.h" />
+    <ClInclude Include="src\SkillTypeBaseInfo.h" />
+    <ClInclude Include="src\SkillTypeInfo.h" />
+    <ClInclude Include="src\SkillTypeInfo2.h" />
+    <ClInclude Include="src\SkillScriptHandler.h" />
+    <ClInclude Include="src\SkillTypeInfo3rd2_ShadowChaser.h" />
+    <ClInclude Include="src\PCSkill.h" />
+    <ClInclude Include="src\SkillTypeInfo2_2(2).h" />
+    <ClInclude Include="src\MobTombInfo.h" />
+    <ClInclude Include="src\AsyncMonopolyProcess.h" />
+    <ClInclude Include="src\PCHireItemCtrl.h" />
+    <ClInclude Include="src\Request.h" />
+    <ClInclude Include="src\PCElemental.h" />
+    <ClInclude Include="src\Player\Inventory\CIVItEquipItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player\Inventory\CIVItNormalItem.h">
+      <Filter>Player\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImportantItem.h" />
+    <ClInclude Include="src\PCItemInventoryMgr.h" />
+    <ClInclude Include="src\CAuctionCtrl.h" />
+    <ClInclude Include="src\CAuctionDB.h" />
+    <ClInclude Include="src\ZSAcceptThread.h" />
+    <ClInclude Include="src\shared\N2System\N2DualKeyMap.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2IDAllocator.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2IDGenerator.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2IDGenerator36.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2Inter.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2InterMessageSystem.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2MessageQueue.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2Object.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2SyncObject.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2SystemMgr.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\N2Thread.h">
+      <Filter>shared\N2System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CMemorialDungeonFileLog.h" />
+    <ClInclude Include="src\CSectionLog.h" />
+    <ClInclude Include="src\AsyncDBWork\LoadWarpInfoADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RuneItemInfo.h" />
+    <ClInclude Include="src\ZoneScript.h" />
+    <ClInclude Include="src\EStateTypeInfo3rd1_blreo.h" />
+    <ClInclude Include="src\EStateTypeInfo3rd2_blreo.h" />
+    <ClInclude Include="src\SkillTypeInfo3rd1_Warlock.h" />
+    <ClInclude Include="src\ActorSchedulerIdentity.h" />
+    <ClInclude Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAFile.h">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTALexicalAnalyzer.h">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAToken.h">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\N2System\FTA(Formated Text Analyzer)\N2FTAVar.h">
+      <Filter>shared\N2System\FTA%28Formated Text Analyzer%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CFontShopMgr.h" />
+    <ClInclude Include="src\shared\VarLenPacketPtr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CUserBlockMgr.h" />
+    <ClInclude Include="src\ExpParameter.h" />
+    <ClInclude Include="src\PCBattle.h" />
+    <ClInclude Include="src\PCBattleHomun.h" />
+    <ClInclude Include="src\CAutoSpellVar.h" />
+    <ClInclude Include="src\GameGuard\CSAuth.h">
+      <Filter>GameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameGuard\CSAuth2.h">
+      <Filter>GameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameGuard\ggsrv.h">
+      <Filter>GameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharInfoDB.h" />
+    <ClInclude Include="src\PCProperty.h" />
+    <ClInclude Include="src\PCFormula_PhysicsSupport.h" />
+    <ClInclude Include="src\PCFormula_CommonSupport.h" />
+    <ClInclude Include="src\ActorFormula_CommonSupport.h" />
+    <ClInclude Include="src\SkillStuff.h" />
+    <ClInclude Include="src\EStateTypeInfo3rd2_Elemental.h" />
+    <ClInclude Include="src\CHPAmount.h" />
+    <ClInclude Include="src\CSPAmount.h" />
+    <ClInclude Include="src\CPCFriendClass.h" />
+    <ClInclude Include="src\SkillTypeInfo3rd1_Mechanic.h" />
+    <ClInclude Include="src\Room.h" />
+    <ClInclude Include="src\RoomMgr.h" />
+    <ClInclude Include="src\CheckUseItemList.h" />
+    <ClInclude Include="src\ItemServer\CEfstScriptEventHandler.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemServer\CItemScriptEventHandler.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemServer\specialitem.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemServer\specialitemmgr.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemServer\specialitemscanner.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemServer\specialitemdef.h">
+      <Filter>ItemServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\DeleteCoupleADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MakerRankMgr.h" />
+    <ClInclude Include="src\MakerRankDB.h" />
+    <ClInclude Include="src\PCItemInventory.h" />
+    <ClInclude Include="src\PCStoreItemIV.h" />
+    <ClInclude Include="src\Inventory.h" />
+    <ClInclude Include="src\PCCartItemIV.h" />
+    <ClInclude Include="src\PCBodyItemIV.h" />
+    <ClInclude Include="src\AsyncDBWork\MercenaryDeleteADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\MercenaryCreateADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\SaveSkillADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\SaveStoreADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\LoadStoreADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player\AmpLogonPermit.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\ElementalCreateADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncDBWork\ElementalDeleteADBWork.h">
+      <Filter>AsyncDBWork</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\AsyncDBWork\Skill3rd.inl">
+      <Filter>AsyncDBWork</Filter>
+    </None>
+  </ItemGroup>
+</Project>

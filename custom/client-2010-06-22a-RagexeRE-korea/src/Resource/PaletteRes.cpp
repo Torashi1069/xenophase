@@ -1,0 +1,3 @@
+#include "Resource/PaletteRes.h"
+
+

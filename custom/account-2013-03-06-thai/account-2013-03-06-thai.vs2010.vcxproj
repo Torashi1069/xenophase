@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>account-2013-03-06-thai</ProjectName>
+    <ProjectGuid>{67A83633-21AE-4BD0-8821-1CE8872AB8D6}</ProjectGuid>
+    <RootNamespace>account-2013-03-06-thai</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">out\vc10-$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\tmp\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">out\vc10-$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\tmp\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>src;../../3rdparty</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_32BIT_TIME_T;RFEXE;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>StdAfx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>user32.lib;winmm.lib;ws2_32.lib;odbc32.lib;gdi32.lib;imagehlp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;RFEXE;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>src;../../3rdparty</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>StdAfx.h</ForcedIncludeFiles>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>user32.lib;winmm.lib;ws2_32.lib;odbc32.lib;gdi32.lib;imagehlp.lib</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AccountDB.cpp" />
+    <ClCompile Include="src\BillingConnection.cpp" />
+    <ClCompile Include="src\BillingDB.cpp" />
+    <ClCompile Include="src\BlockIPListMng.cpp" />
+    <ClCompile Include="src\BlockTime.cpp" />
+    <ClCompile Include="src\Certificate.cpp" />
+    <ClCompile Include="src\CharacterServerInfo.cpp" />
+    <ClCompile Include="src\Client_.cpp" />
+    <ClCompile Include="src\Common\InfoScript.cpp" />
+    <ClCompile Include="src\Common\md5.cpp" />
+    <ClCompile Include="src\Common\MyMiniDumpUnhandledExceptionHandler.cpp" />
+    <ClCompile Include="src\Common\NODBCHandler.cpp" />
+    <ClCompile Include="src\Common\Packet.cpp" />
+    <ClCompile Include="src\Common\ScriptParser.cpp" />
+    <ClCompile Include="src\Common\ServerInfoList.cpp" />
+    <ClCompile Include="src\Common\SyncObject.cpp" />
+    <ClCompile Include="src\ConnectLog.cpp" />
+    <ClCompile Include="src\ConnectLogDB.cpp" />
+    <ClCompile Include="src\DES.cpp" />
+    <ClCompile Include="src\DuplicatedIPBlockList.cpp" />
+    <ClCompile Include="src\MonitorPacket.cpp" />
+    <ClCompile Include="src\NightEnv.cpp" />
+    <ClCompile Include="src\OTPMgr.cpp" />
+    <ClCompile Include="src\PCBangDB.cpp" />
+    <ClCompile Include="src\PCBangList.cpp" />
+    <ClCompile Include="src\ReceiveQueue.cpp" />
+    <ClCompile Include="src\SendQueue.cpp" />
+    <ClCompile Include="src\UserCounter.cpp" />
+    <ClCompile Include="src\UserDB.cpp" />
+    <ClCompile Include="src\UserDB_Sakray.cpp" />
+    <ClCompile Include="src\UserList.cpp" />
+    <ClCompile Include="src\UserProcess.cpp" />
+    <ClCompile Include="src\UserVerify.cpp" />
+    <ClCompile Include="src\WucsDB.cpp" />
+    <ClCompile Include="src\WUCSPacket.cpp" />
+    <ClCompile Include="src\WUCSStreamManager.cpp" />
+    <ClCompile Include="src\WUCSSvrProcess.cpp" />
+    <ClInclude Include="src\Account.h" />
+    <ClInclude Include="src\AccountDB.h" />
+    <ClInclude Include="src\BillingConnection.h" />
+    <ClInclude Include="src\BillingDB.h" />
+    <ClInclude Include="src\BlockIPListMng.h" />
+    <ClInclude Include="src\BlockTime.h" />
+    <ClInclude Include="src\Certificate.h" />
+    <ClInclude Include="src\CharacterServerInfo.h" />
+    <ClInclude Include="src\CharSvrProcess.h" />
+    <ClInclude Include="src\Client_.h" />
+    <ClInclude Include="src\Common\CircleQueue.h" />
+    <ClInclude Include="src\Common\CriticalSection.h" />
+    <ClInclude Include="src\Common\Database.h" />
+    <ClInclude Include="src\Common\DatabaseStatement.h" />
+    <ClInclude Include="src\Common\DBProxy.h" />
+    <ClInclude Include="src\Common\EnterTraceLog.h" />
+    <ClInclude Include="src\Common\GlobalInfoDB.h" />
+    <ClInclude Include="src\Common\InfoScript.h" />
+    <ClInclude Include="src\Common\md5.h" />
+    <ClInclude Include="src\Common\MemPool.h" />
+    <ClInclude Include="src\Common\MyMiniDumpUnhandledExceptionHandler.h" />
+    <ClInclude Include="src\Common\Network.h" />
+    <ClInclude Include="src\Common\NFileLog.h" />
+    <ClInclude Include="src\Common\NODBCHandler.h" />
+    <ClInclude Include="src\Common\NOutputTextMgr.h" />
+    <ClInclude Include="src\Common\NSyncObject.h" />
+    <ClInclude Include="src\Common\NSystem\NInter.h" />
+    <ClInclude Include="src\Common\NSystem\NMessageMgr.h" />
+    <ClInclude Include="src\Common\NSystem\NMessageQueue.h" />
+    <ClInclude Include="src\Common\NSystem\NObject.h" />
+    <ClInclude Include="src\Common\NSystem\NThread.h" />
+    <ClInclude Include="src\CAccountServerMgr.h" />
+    <ClCompile Include="src\Account.cpp" />
+    <ClCompile Include="src\CharSvrProcess.cpp" />
+    <ClCompile Include="src\Common\CircleQueue.cpp" />
+    <ClCompile Include="src\Common\CriticalSection.cpp" />
+    <ClCompile Include="src\Common\Database.cpp" />
+    <ClCompile Include="src\Common\DatabaseStatement.cpp" />
+    <ClCompile Include="src\Common\EnterTraceLog.cpp" />
+    <ClCompile Include="src\Common\GlobalInfoDB.cpp" />
+    <ClCompile Include="src\Common\Network.cpp" />
+    <ClCompile Include="src\Common\NFileLog.cpp" />
+    <ClCompile Include="src\Common\NOutputTextMgr.cpp" />
+    <ClCompile Include="src\Common\NSyncObject.cpp" />
+    <ClCompile Include="src\Common\NSystem\NMessageMgr.cpp" />
+    <ClCompile Include="src\Common\NSystem\NMessageQueue.cpp" />
+    <ClCompile Include="src\Common\NSystem\NObject.cpp" />
+    <ClCompile Include="src\Common\NSystem\NThread.cpp" />
+    <ClCompile Include="src\Network3\AsyncProcessMgr.cpp" />
+    <ClCompile Include="src\Network3\CompletionPort.cpp" />
+    <ClCompile Include="src\Network3\Process.cpp" />
+    <ClCompile Include="src\Network3\Stream.cpp" />
+    <ClCompile Include="src\Network3\StreamManager.cpp" />
+    <ClCompile Include="src\PCBangBillingDB.cpp" />
+    <ClInclude Include="src\Common\Packet.h" />
+    <ClInclude Include="src\Common\PacketClient.h" />
+    <ClInclude Include="src\Common\PacketServer.h" />
+    <ClInclude Include="src\Common\RandStr.h" />
+    <ClInclude Include="src\Common\ScriptParser.h" />
+    <ClInclude Include="src\Common\ServerInfoList.h" />
+    <ClInclude Include="src\Common\Singleton.h" />
+    <ClInclude Include="src\Common\SyncObject.h" />
+    <ClInclude Include="src\Common\Thread.h" />
+    <ClInclude Include="src\ConnectLog.h" />
+    <ClInclude Include="src\ConnectLogDB.h" />
+    <ClInclude Include="src\DES.h" />
+    <ClInclude Include="src\DuplicatedIPBlockList.h" />
+    <ClInclude Include="src\Enums.h" />
+    <ClInclude Include="src\MonitorPacket.h" />
+    <ClInclude Include="src\MonitorProcess.h" />
+    <ClInclude Include="src\Network3\AsyncProcess.h" />
+    <ClInclude Include="src\Network3\AsyncProcessMgr.h" />
+    <ClInclude Include="src\Network3\CompletionPort.h" />
+    <ClInclude Include="src\Network3\Process.h" />
+    <ClInclude Include="src\Network3\ProcessFactory.h" />
+    <ClInclude Include="src\Network3\Stream.h" />
+    <ClInclude Include="src\Network3\StreamManager.h" />
+    <ClInclude Include="src\NightEnv.h" />
+    <ClInclude Include="src\OTPMgr.h" />
+    <ClInclude Include="src\PCBangBillingDB.h" />
+    <ClInclude Include="src\PCBangDB.h" />
+    <ClInclude Include="src\PCBangList.h" />
+    <ClInclude Include="src\ReceiveQueue.h" />
+    <ClInclude Include="src\SakrayAID.h" />
+    <ClInclude Include="src\SendQueue.h" />
+    <ClCompile Include="src\StdAfx.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="src\TBlockTime.h" />
+    <ClInclude Include="src\UserCounter.h" />
+    <ClInclude Include="src\UserDB.h" />
+    <ClInclude Include="src\UserDB_Sakray.h" />
+    <ClInclude Include="src\UserList.h" />
+    <ClInclude Include="src\UserProcess.h" />
+    <ClInclude Include="src\UserVerify.h" />
+    <ClInclude Include="src\WucsDB.h" />
+    <ClInclude Include="src\WUCSPacket.h" />
+    <ClInclude Include="src\WUCSStreamManager.h" />
+    <ClInclude Include="src\WUCSSvrProcess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAccountServerMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3rdparty\platform\platform-10.vcxproj">
+      <Project>{c6a5b15c-293c-40cc-9fae-c3a7a657e12c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
