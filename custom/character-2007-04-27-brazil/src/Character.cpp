@@ -253,7 +253,7 @@ int __cdecl main(int argc, const char** argv, const char** envp)
 	/////////////////////////////////////////////////////////////////////////////
 	process_list.clear();
 	/////////////////////////////////////////////////////////////////////////////
-	const DWORD USER_IP = gLocalServerInfo.m_dwIP;
+	const DWORD USER_IP = gLocalServerInfo.m_dwPrivateIP;
 	const WORD USER_PORT = (WORD)gLocalServerInfo.m_nPort;
 	int USER_NETWORK_BUFSIZE = CONF("USER_NETWORK_BUFSIZE") : 10000;
 	int USER_PROCESS_OBJ_NUM = CONF("USER_PROCESS_OBJ_NUM") : 5000;
